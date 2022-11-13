@@ -1,8 +1,6 @@
 public class TwoSums 
 {
    
-
-
     public static void main(String[] args)
     {
           int[] nums = {2,7,11,15};
@@ -40,14 +38,16 @@ public class TwoSums
         {
             for( int in = index + 1 ; in <= nums.length-1;in++)
             {
-                if(nums[index]+nums[in] == target)
+                if(nums[index]+nums[in] == target) // target - nums[in] = nums[index] 
                 {
-                    int[] indexes_that_match_targer = {index, in};
-                    return indexes_that_match_targer;
+                    //int[] indexes_that_match_targer = {index, in};
+                    //return indexes_that_match_targer;
+                    return new int[] {index,in};
                 }
             }
         }
         return null;
-
     }
+
+
 }
